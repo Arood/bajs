@@ -283,7 +283,7 @@ Made with <svg class="love" version="1.1" id="Layer_1" xmlns="http://www.w3.org/
     var iframe = code.getTextArea().parentNode.parentNode.parentNode.querySelector('iframe');
     var doc = iframe.contentWindow.document;
     doc.open();
-    doc.write('<link rel="stylesheet" href="style.css"><body class="iframe"><input type="button" class="button" value="Click me"><script src="ba.js"><\/script><script>'+code.getValue()+'<\/script>');
+    doc.write('<link rel="stylesheet" href="style.css"><body class="iframe"><input type="button" class="button" value="Click me"><script src="https://cdn.rawgit.com/Arood/bajs/master/ba.js"><\/script><script>'+code.getValue()+'<\/script>');
     doc.close();
   };
 
