@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<title>ba.js basic animations</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.1.0/codemirror.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.1.0/theme/neo.min.css">
+<link rel="stylesheet" href="style.css">
+<body>
+<div class="head">
+<h1><strong>ba<span>.</span>js</strong> basic animations</h1>
+<h2>The name says it all</h2>
+</div>
+<nav class="menu">
+<ul>
+<li><a href="#what">What people are saying</a></li>
+<li><a href="#gettingstarted">Getting started</a></li>
+<li><a href="#reference">Reference</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ul>
+</nav>
+
+<div class="container">
+<h2 class="intro">This is a JavaScript library for creating and/or managing CSS animations from your JS code.</h2>
+
+<div class="selling-points">
+  <div class="col">
+    <div class="icon">
+      <svg id="f1" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px"
+         height="48px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+
+        <g>
+          <polygon points="19.5,19.5 12,23.5 4.5,19.5 
+            4.5,10.5 12,6.5 19.5,10.5     "/>
+          <polyline points="4.5,14.5 
+            2.5,14.5 2.5,16.5 4.5,18.5    "/>
+          <polyline points="19.5,14.5 
+            21.5,14.5 21.5,16.5 19.5,18.5     "/>
+          <polyline points="12,6.5 13,10 19.5,14.5    "/>
+          <polygon points="14.5,4.5 12,6.5 9.5,4.5 9.5,2.5 
+            12,0.5 14.5,2.5     "/>
+          <polyline points="10,18.5 
+            12,19.5 14,18.5     "/>
+          <polyline points="8.5,15 
+            9.5,14 10.5,15    "/>
+          <polyline points="14,15 
+            15,14 16,15     "/>
+          
+            <line x1="13.271" y1="7.178" x2="18.5" y2="5"/>
+          <polyline points="12,6.5 11,10 4.5,14.5     "/>
+          
+            <line x1="10.728" y1="7.178" x2="5.5" y2="5"/>
+        </g>
+      </svg>
+    </div>
+    <h3>Easy to use</h3>
+    <p>This API was designed to be as simple as possible so you can spend your time making animations instead.</p>
+  </div>
+  <div class="col">
+
+    <div class="icon">
+      <svg id="f2" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px"
+         height="48px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+        <g>
+          <polyline class="nocap" points="3,18.5 0.5,18.5 3,12.5 
+            5.5,12.5 8,6.5 23.5,6.5 20,18.5 19.5,18.5     "/>
+          <polygon class="nocap" points="6,19.5 4.5,20.5 3,19.5 3,18 
+            4.5,17 6,18     "/>
+          <polygon class="nocap" points="19.5,19.5 18,20.5 16.5,19.5 
+            16.5,18 18,17 19.5,18     "/>
+          <line class="nocap" x1="6" y1="18.5" x2="16.5" y2="18.5"/>
+          <line class="nocap" x1="5.5" y1="12.5" x2="10" y2="12.5"/>
+          <line class="nocap" x1="12" y1="6.5" x2="8" y2="18.5"/>
+          <line class="nocap" x1="14" y1="18.5" x2="18" y2="6.5"/>
+          <line class="cap" x1="12.5" y1="12.5" x2="13.5" y2="12.5"/>
+          <line class="cap" x1="20.437" y1="17" x2="22" y2="17"/>
+          <line class="cap" x1="2" y1="23.5" x2="3.5" y2="23.5"/>
+          <line class="cap" x1="6.5" y1="23.5" x2="8" y2="23.5"/>
+          <line class="cap" x1="11" y1="23.5" x2="12.5" y2="23.5"/>
+          <line class="cap" x1="15.5" y1="23.5" x2="17" y2="23.5"/>
+          <line class="cap" x1="20" y1="23.5" x2="21.5" y2="23.5"/>
+        </g>
+      </svg>
+    </div>
+    <h3>Gotta go fast</h3>
+    <p>By utilizing CSS3 we guarantee optimal performance with hardware accelerated animations.</p>
+  </div>
+  <div class="col">
+  <div class="icon">
+
+    <svg id="f3" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px"
+     height="48px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+
+      <g>
+        <polygon points="10.5,6.5 9,7.5 7.5,6.5 7.5,5 
+          9,4 10.5,5    "/>
+        <line  x1="12" y1="0.5" x2="12" y2="1.5"/>
+        <polygon  points="16,23.5 8,23.5 6.5,16 9,13.5 15,13.5 17.5,16"/>
+          <line  x1="12" y1="10.5" x2="12" y2="13.5"/>
+          <line  x1="7.6" y1="21.5" x2="16.4" y2="21.5"/>
+        <polyline  points="2.5,16 
+          3,19 6.844,17.719     "/>
+        <polyline  points="0.5,12 
+          0.5,14 2.5,16 4.5,14 4.5,12     "/>
+        <polygon  points="16,10.5 
+          20.5,6 16,1.5 8,1.5 3.5,6 8,10.5    "/>
+        <polygon  points="13.5,6.5 15,7.5 16.5,6.5 16.5,5 
+          15,4 13.5,5     "/>
+        <polyline points="21.5,16 
+          21,19 17.156,17.719     "/>
+        <polyline  points="23.5,12 
+          23.5,14 21.5,16 19.5,14 19.5,12     "/>
+      </g>
+
+    </svg>
+  </div>
+  <h3>No dependencies</h3>
+  <p>Use this library without any additional frameworks. It also handles vendor prefixes so you don't have to.</p>
+  </div>
+</div>
+
+<div class="center">
+
+<h2 id="what">What people say</h2>
+
+<a class="twitter-timeline" href="https://twitter.com/search?q=%23bajs%20%23javascript" data-widget-id="603129330370277376">Tweets about #bajs #javascript</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<h2>Getting started</h2>
+
+<p>Download the ba.js file from GitHub or link it externally:</p>
+
+<pre>https://cdn.rawgit.com/Arood/bajs/master/ba.js</pre>
+
+<p>Then check out the API reference and examples below.</p>
+
+
+  <h2>Reference</h2>
+  <h3>Animate: <span>.a(element, options, [callback])</span></h3>
+
+  <dl>
+    <dt>element</dt>
+    <dd>A single HTML element that ba.js will keep an eye on.</dd>
+    <dt>options</dt>
+    <dd>An object containing options for the animation. See below for a list of options that can be used, additional keys will be used as keyframes in the animation. A keyframe consist of an object where every key-value is a CSS property. Transforms in a keyframe will automatically be vendor prefixed if needed.</dd>
+    <dt>callback (optional)</dt>
+    <dd>A function that is run after the animation has ended.</dd>
+  </dl>
+
+  <h4>Options</h4>
+
+  <dl>
+    <dt>curve</dt>
+    <dd>Specifies how a CSS animation should progress over the duration of each cycle. Supports any value that <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function">animation-timing-function</a> can use.</dd>
+    <dt>delay</dt>
+    <dd>Specifies when the animation should start.</dd>
+    <dt>duration</dt>
+    <dd>Specifies the length of time that an animation should take to complete one cycle.</dd>
+    <dt>repeat</dt>
+    <dd>Defines the number of times an animation cycle should be played before stopping. Can be a number or "infinite", default is 1.</dd>
+  </dl>
+
+
+</div>
+
+<div class="example">
+  <div class="editor">
+    <div class="editor-inner">
+      <textarea>var button = document.querySelector(".button");
+button.addEventListener('click', function(e) {
+  bajs.a(button, {
+    "duration": "1s",
+    "0%": {
+      "transform": "scale(1.0, 1.0)"
+    },
+    "50%": {
+      "transform": "scale(1.5, 1.5)"
+    },
+    "100%": {
+      "transform": "scale(1.0, 1.0)"
+    }
+  }, function() {
+    button.value = "Animation complete!";
+    setTimeout(function() {
+      button.value = "Click me";
+    }, 2000);
+  });
+});</textarea>
+    </div>
+  </div>
+  <div class="preview">
+    <iframe></iframe>
+  </div>
+</div>
+
+<div class="center">
+  <h3>Animation Did End: <span>.ade(element, callback)</span></h3>
+  <dl>
+    <dt>element</dt>
+    <dd>A single HTML element that ba.js will keep an eye on.</dd>
+    <dt>callback</dt>
+    <dd>A function that is run after the animation has ended.</dd>
+  </dl>
+</div>
+
+<div class="example">
+  <div class="editor">
+    <div class="editor-inner">
+      <textarea>var button = document.querySelector(".button");
+button.addEventListener('click', function(e) {
+  bajs.ade(button, function() {
+    button.value = "Animation complete!";
+    setTimeout(function() {
+      button.value = "Click me";
+      button.classList.remove("demo-animation");
+    }, 2000);
+  });
+  button.classList.add("demo-animation");
+});</textarea>
+    </div>
+  </div>
+  <div class="preview">
+    <iframe></iframe>
+  </div>
+</div>
+
+<div class="center">
+  <h3>Availability Test: <span>.at()</span></h3>
+  <p>This method returns true if the animation property is supported in the current browser.
+</div>
+
+<div class="example">
+  <div class="editor">
+    <div class="editor-inner">
+      <textarea>var button = document.querySelector(".button");
+if (bajs.at()) {
+  button.value = "Animations supported";
+} else {
+  button.value = "Animations NOT supported";
+}</textarea>
+    </div>
+  </div>
+  <div class="preview">
+    <iframe></iframe>
+  </div>
+</div>
+
+<div class="center">
+  <h2 id="faq">Frequently Asked Questions</h2>
+
+  <p><strong>Another JS framework, really?</strong><br>
+  No, this is just a library. Big difference.</p>
+
+  <p><strong>What if I'm looking for a library?</strong><br>
+  Not sure what you mean but maybe <a href="http://skitjs.com">skit</a> is something for you?</p>
+
+  <p><strong>Does it work on IE6?</strong><br>
+  <a href="https://www.youtube.com/watch?v=aaSRYecKaqc">You're an IE6</a>.</p>
+</div>
+
+</div>
+
+
+<div class="foot">
+  
+Made with <svg class="love" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="16px" height="16px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g>
+  <polygon fill="#FFFFFF" stroke="#900" stroke-linejoin="round" stroke-width="2px" stroke-miterlimit="10" points="22.5,16.75 12,22.25 1.5,16.75 
+    1.5,4.75 7.227,1.75 12,5.25 16.773,1.751 22.5,4.75  "/>
+</g>
+</svg> in Sweden by <a href="http://marcusolovsson.com">Marcus</a>
+
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.1.0/codemirror.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.1.0/mode/javascript/javascript.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/Arood/bajs/master/ba.js"></script>
+<script type="text/javascript">
+
+(function() {
+
+  var textareas = document.querySelectorAll('textarea');
+
+  var codeChange = function(code) {
+    var iframe = code.getTextArea().parentNode.parentNode.parentNode.querySelector('iframe');
+    var doc = iframe.contentWindow.document;
+    doc.open();
+    doc.write('<link rel="stylesheet" href="style.css"><body class="iframe"><input type="button" class="button" value="Click me"><script src="ba.js"><\/script><script>'+code.getValue()+'<\/script>');
+    doc.close();
+  };
+
+  for (var i=0; i<textareas.length; i++) {
+    var code = CodeMirror.fromTextArea(textareas[i], {
+      lineNumbers: true,
+      theme: "neo"
+    });
+
+    code.on('change', function(instance, change) {
+      codeChange(instance);
+    });
+
+    codeChange(code);
+
+  }
+
+  bajs.a(document.querySelector("#f1"), {
+    "duration": "0.5s",
+    "0%": {
+      "transform": "scale(0.5, 0.5)",
+      "opacity": "0"
+    },
+    "100%": {
+      "transform": "scale(1,1)",
+      "opacity": "1"
+    }
+  }, function() {
+    this.style.opacity = 1;
+
+    bajs.a(document.querySelector("#f2"), {
+      "duration": "0.5s",
+      "0%": {
+        "transform": "translateX(30px)",
+        "opacity": "0"
+      },
+      "100%": {
+        "transform": "translateX(0px)",
+        "opacity": "1"
+      }
+    }, function() {
+      this.style.opacity = 1;
+
+      bajs.a(document.querySelector("#f3"), {
+        "duration": "0.5s",
+        "0%": {
+          "transform": "translateY(30px)",
+          "opacity": "0"
+        },
+        "100%": {
+          "transform": "translateY(0px)",
+          "opacity": "1"
+        }
+      }, function() {
+        this.style.opacity = 1;
+      });
+
+    });
+
+  });
+
+})();
+
+</script>
+</body>
