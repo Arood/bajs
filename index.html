@@ -126,9 +126,9 @@
 
 <h2 id="gettingstarted">Getting started</h2>
 
-<p>Download the ba.js file from <a href="https://github.com/Arood/bajs">GitHub</a> or link it externally:</p>
+<p>Download the ba.js file from <a href="https://github.com/Arood/bajs">GitHub</a> or link to the minified version externally:</p>
 
-<pre>https://cdn.rawgit.com/Arood/bajs/master/ba.js</pre>
+<pre>https://cdn.rawgit.com/Arood/bajs/master/ba.min.js</pre>
 
 <p>Then check out the API reference and examples below.</p>
 
@@ -272,7 +272,7 @@ Made with <svg class="love" version="1.1" id="Layer_1" xmlns="http://www.w3.org/
 </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.1.0/codemirror.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.1.0/mode/javascript/javascript.min.js"></script>
-<script type="text/javascript" src="https://cdn.rawgit.com/Arood/bajs/master/ba.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/Arood/bajs/master/ba.min.js"></script>
 <script type="text/javascript" src="https://cdn.rawgit.com/cferdinandi/smooth-scroll/master/dist/js/smooth-scroll.min.js"></script>
 <script type="text/javascript">
 
@@ -284,7 +284,7 @@ Made with <svg class="love" version="1.1" id="Layer_1" xmlns="http://www.w3.org/
     var iframe = code.getTextArea().parentNode.parentNode.parentNode.querySelector('iframe');
     var doc = iframe.contentWindow.document;
     doc.open();
-    doc.write('<link rel="stylesheet" href="style.css"><body class="iframe"><input type="button" class="button" value="Click me"><script src="https://cdn.rawgit.com/Arood/bajs/master/ba.js"><\/script><script>'+code.getValue()+'<\/script>');
+    doc.write('<link rel="stylesheet" href="style.css"><body class="iframe"><input type="button" class="button" value="Click me"><script src="https://cdn.rawgit.com/Arood/bajs/master/ba.min.js"><\/script><script>'+code.getValue()+'<\/script>');
     doc.close();
   };
 
